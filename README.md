@@ -23,3 +23,4 @@ npm run lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 "#kexin5-vue-admin"  
+"kexin5-vue-admin" 
