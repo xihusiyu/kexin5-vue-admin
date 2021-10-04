@@ -4,7 +4,7 @@
     <el-breadcrumb separator-class="el-icon-arrow-right">
       <el-breadcrumb-item :to="{ path: '/home' }">首页</el-breadcrumb-item>
       <el-breadcrumb-item>商品管理</el-breadcrumb-item>
-      <el-breadcrumb-item>商品列表</el-breadcrumb-item>
+      <el-breadcrumb-item>商品分类</el-breadcrumb-item>
     </el-breadcrumb>
     <!-- 卡片视图区域 -->
     <el-card>
@@ -53,7 +53,10 @@
           <el-button type="primary" icon="el-icon-edit" size="mini"
             >编辑</el-button
           >
-          <el-button type="danger" icon="el-icon-delete" size="mini"
+          <el-button
+            type="danger"
+            icon="el-icon-delete"
+            size="mini"
             >删除</el-button
           >
         </template>
@@ -236,7 +239,7 @@ export default {
     },
     // 选择项发生变化触发这个函数
     parentCateChanged() {
-      console.log(this.selectedKeys)
+      // console.log(this.selectedKeys)
       // 如果 selectedKeys 数组中的length 大于 0, 证明选中的父级分类
       // 反之, 就说明没有选中任何父级分类
       if (this.selectedKeys.length > 0) {
